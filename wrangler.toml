@@ -1,0 +1,15 @@
+#:schema node_modules/wrangler/config-schema.json
+# Cloudflare Workers configuration file
+# Docs: https://developers.cloudflare.com/workers/configuration
+name = "cloudflare-workers"
+main = "src/index.ts"
+compatibility_date = "2024-10-22"
+account_id = "YOUR_ACCOUNT_ID"
+workers_dev = false
+
+[vars]
+ACCOUNT_ID = "YOUR_ACCOUNT_ID"
+
+[observability]
+enabled = true
+head_sampling_rate = 1
